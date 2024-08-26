@@ -1,0 +1,42 @@
+{
+  "name": "neonstack",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@prisma/client": "^4.x",
+    "next": "^12.x",
+    "next-auth": "^4.x",
+    "react": "^18.x",
+    "react-dom": "^18.x",
+    "zod": "^3.x",
+    "@trpc/client": "^10.x",
+    "@trpc/server": "^10.x",
+    "@trpc/react-query": "^10.x",
+    "@trpc/next": "^10.x"
+  },
+  "devDependencies": {
+    "@types/node": "^18.x",
+    "@types/react": "^18.x",
+    "@types/jest": "^29.x",
+    "@testing-library/react": "^14.x",
+    "@testing-library/jest-dom": "^5.x",
+    "autoprefixer": "^10.x",
+    "eslint": "^8.x",
+    "eslint-config-next": "^12.x",
+    "eslint-config-prettier": "^8.x",
+    "eslint-plugin-prettier": "^4.x",
+    "jest": "^29.x",
+    "postcss": "^8.x",
+    "prettier": "^2.x",
+    "prisma": "^4.x",
+    "tailwindcss": "^3.x",
+    "typescript": "^4.x"
+  }
+}
