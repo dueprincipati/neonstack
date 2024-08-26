@@ -15,50 +15,41 @@ NeonStack is a comprehensive, modern web application starter kit designed to hel
 - **Jest** and **React Testing Library**: Testing frameworks for robust applications
 - **ESLint** and **Prettier**: Code quality and formatting tools
 
-## Prerequisites
-
-Before you begin, ensure you have the following installed on your local machine:
-
-- Node.js (v14 or later)
-- npm or yarn
-- Git
-
 ## Getting Started
 
-To get started with NeonStack, follow these steps:
+To use this starter kit for your project:
 
-1. Clone the repository:
+1. Click the "Use this template" button at the top of this repository.
+   (Alternatively, you can clone the repository and then remove the `.git` folder to start fresh)
+
+2. Clone your new repository:
    ```
-   git clone https://github.com/dueprincipati/neonstack.git
-   cd neonstack
+   git clone https://github.com/your-github-username/your-project-name.git
+   cd your-project-name
    ```
 
-2. Install dependencies:
+3. Install dependencies:
    ```
    npm install
-   # or
-   yarn install
    ```
 
-3. Set up your environment variables:
+4. Set up your environment variables:
    ```
    cp .env.example .env.local
    ```
    Edit `.env.local` and add your Neon database URL and other necessary credentials.
 
-4. Set up the database:
+5. Set up the database:
    ```
    npx prisma db push
    ```
 
-5. Run the development server:
+6. Run the development server:
    ```
    npm run dev
-   # or
-   yarn dev
    ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+7. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
 ## Project Structure
 
@@ -86,75 +77,14 @@ neonstack/
 └── tsconfig.json
 ```
 
-## Key Technologies
+## Customization
 
-### Next.js
+Feel free to modify any part of this starter kit to suit your needs. Here are some common customizations:
 
-Next.js is the core of our application, providing server-side rendering, API routes, and an excellent developer experience. Learn more in the [Next.js documentation](https://nextjs.org/docs).
-
-### TypeScript
-
-We use TypeScript to add static typing to our JavaScript, catching errors early and improving code quality. Check out the [TypeScript documentation](https://www.typescriptlang.org/docs/) for more information.
-
-### Tailwind CSS
-
-Tailwind CSS allows for rapid UI development with utility classes. Customize your design in `tailwind.config.js`. See the [Tailwind CSS documentation](https://tailwindcss.com/docs) for more.
-
-### Prisma
-
-Prisma is our ORM of choice, providing type-safe database access and easy migrations. Define your database schema in `prisma/schema.prisma`. Learn more from the [Prisma documentation](https://www.prisma.io/docs/).
-
-### Postgres on Neon
-
-We use Neon for serverless Postgres hosting. Set up your database URL in the `.env.local` file. Visit the [Neon documentation](https://neon.tech/docs/) for more information.
-
-### NextAuth.js
-
-NextAuth.js handles authentication in our application. Configure providers and callbacks in `pages/api/auth/[...nextauth].ts`. See the [NextAuth.js documentation](https://next-auth.js.org/getting-started/introduction) for details.
-
-### tRPC
-
-tRPC enables end-to-end typesafe APIs. Define your procedures in `server/routers` and use them in your frontend with full type safety. Check out the [tRPC documentation](https://trpc.io/docs) to learn more.
-
-### Zod
-
-We use Zod for schema validation throughout the application. Define your schemas in `lib/validations`. See the [Zod documentation](https://github.com/colinhacks/zod) for usage details.
-
-## Testing
-
-We use Jest and React Testing Library for testing. Run tests with:
-
-```
-npm run test
-# or
-yarn test
-```
-
-Write your tests in the `tests` directory, following the `*.test.ts` or `*.test.tsx` naming convention.
-
-## Code Quality
-
-We use ESLint for linting and Prettier for code formatting. Run linting with:
-
-```
-npm run lint
-# or
-yarn lint
-```
-
-Format your code with:
-
-```
-npm run format
-# or
-yarn format
-```
-
-## Deployment
-
-NeonStack is designed to be easily deployed to platforms like Vercel or Netlify. Follow their respective documentation for deploying Next.js applications.
-
-Remember to set up your environment variables in your deployment platform, including your Neon database URL and any API keys.
+- Update the Prisma schema in `prisma/schema.prisma` to define your data models
+- Modify the tRPC router in `pages/api/trpc/[trpc].ts` to define your API endpoints
+- Add new components in the `components/` directory
+- Create new pages in the `pages/` directory
 
 ## Contributing
 
