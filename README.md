@@ -19,7 +19,7 @@ NeonStack is a comprehensive, modern web application starter kit designed to hel
 
 To use this starter kit for your project:
 
-1. Click the "Use this template" button at the top of this repository.
+1. Fork this repository by clicking the "Fork" button at the top right of this page.
    (Alternatively, you can clone the repository and then remove the `.git` folder to start fresh)
 
 2. Clone your new repository:
